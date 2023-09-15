@@ -1,0 +1,32 @@
+﻿
+@{
+    ViewData["Title"] = "Thongtinhocvien";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="d-flex flex-column">
+    <h1 class="text-center my-5 text-uppercase">THÔNG TIN HỌC VIÊN</h1>
+    <div lass="d-flex flex-column justify-content-between gap-3">
+        <div class="col-4 mx-auto">
+            <form action="/LienheTT/Thongtinhocvien" method="post">
+                <div class="mb-3">
+                    <label for="soNguyen1" class="form-label">Họ tên</label>
+                    <input type="text" inputmode="numeric" class="form-control" id="soNguyen1" name="hovaten" value="@ViewData["Hovaten"]" aria-describedby="text" disabled>
+                </div>
+                <div class="mb-3">
+                    <label for="tennhom" class="form-label">Ngày sinh</label>
+                    <input type="text" inputmode="numeric" class="form-control" id="tennhom" name="tennhom" value="@ViewData["Ngaysinh"]" aria-describedby="text" disabled>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="text" inputmode="numeric" class="form-control" id="email" name="email" value="@ViewData["Email"]" aria-describedby="text" disabled>
+                </div>
+                <div class="mb-3">
+                    <label for="sodienthoai" class="form-label">Số điện thoại</label>
+                    <input type="text" inputmode="numeric" class="form-control" id="sodienthoai" name="sodienthoai" value="@ViewData["Sodienthoai"]" aria-describedby="text" disabled>
+                </div>
+                <div class="d-flex align-items-center justify-content-center mt-5">
+                </div>
+            </form>
+        </div>
+
